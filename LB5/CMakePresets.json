@@ -1,0 +1,17 @@
+{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "default",
+      "displayName": "SFML Lab 15 x64",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build",
+      "architecture": {"value": "x64", "strategy": "external"},
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+      }
+    }
+  ],
+  "buildPresets": [{"name": "default", "configurePreset": "default"}]
+}
