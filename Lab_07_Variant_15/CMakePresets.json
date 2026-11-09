@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "configurePresets": [{
+    "name": "x64-debug",
+    "displayName": "Windows x64 Debug with vcpkg",
+    "generator": "Ninja",
+    "binaryDir": "${sourceDir}/out/build/${presetName}",
+    "architecture": {"value": "x64", "strategy": "external"},
+    "cacheVariables": {"CMAKE_BUILD_TYPE": "Debug", "CMAKE_CXX_STANDARD": "20", "VCPKG_TARGET_TRIPLET": "x64-windows"}
+  }]
+}
